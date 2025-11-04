@@ -64,8 +64,8 @@
             <form>
                 <sheet>
                     <group name="metadata">
-                        <field name="owner_id" invisible="context.get('embed')" />
-                        <field name="property_id" readonly="context.get('embed')" />
+                        <field name="owner_id"/>
+                        <field name="property_id" />
                         <field name="category_id" />
                         <field name="field_type" readonly="True" />
                         <field name="required" readonly="True" />

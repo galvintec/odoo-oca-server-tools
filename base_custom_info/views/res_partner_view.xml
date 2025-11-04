@@ -20,12 +20,22 @@
                                 options='{"no_quick_create": True}'
                             />
                         </group>
-                        <field
+                        <!--<field
                             name="custom_info_ids"
                             colspan="4"
                             nolabel="1"
-                            mode="custom_info"
-                        />
+                        />-->
+                        <!--mode="custom_info"-->
+                        <!--widget="custom_info"-->
+                        <field name="custom_info_ids">
+                            <tree editable="bottom" create="false" delete="false">
+                                <field name="field_type" invisible="true"/>
+                                <field name="category_id" readonly="true"/>
+                                <field name="property_id" readonly="true"/>
+                                <field name="value" attrs="{'readonly': [('field_type','=','id')]}"/>
+                                <field name="value_id" attrs="{'readonly': [('field_type','!=','id')]}"/>
+                            </tree>
+                        </field>
                     </group>
                 </page>
             </xpath>

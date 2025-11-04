@@ -28,6 +28,7 @@
                         <field
                             name="property_ids"
                             nolabel="1"
+                            colspan="2"
                             context="{'form_view_ref': 'base_custom_info.custom_info_property_form', 'tree_view_ref': 'base_custom_info.custom_info_property_tree'}"
                         />
                     </group>
